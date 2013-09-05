@@ -36,10 +36,10 @@ The trick with rbenv is to run: rbenv rehash every time you change something, li
     $ mkdir ~/.rbenv/plugins
     $ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     $ exec $SHELL
-    $ rbenv install 1.9.3-p385
+    $ rbenv install 1.9.3-p448
     
     $ rbenv rehash
-    $ rbenv global 1.9.3-p385
+    $ rbenv global 1.9.3-p448
 
 ####4) Time to install Rails
 The first step I take is to turn off ri and rdoc to speed things up.
@@ -47,10 +47,10 @@ The first step I take is to turn off ri and rdoc to speed things up.
     $ echo "install: --no-ri --no-rdoc" >> ~/.gemrc
     $ echo "update: --no-ri --no-rdoc" >> ~/.gemrc
 
-    $ gem install rails
+    $ gem install rails -v 3.2.14
     $ rbenv rehash
 
-####4) sqlite3
+####5) sqlite3
 
 The server portion of sqlite3 is a set of libraries that binaries (and gems) can link to and use.
 
@@ -78,7 +78,7 @@ After that you can run the cli which is also named: sqlite3
 	sqlite> select sqlite_version();
 	3.7.13
 
-####5) RMagick
+####6) RMagick
 
 I use the RMagick gem to do image processing.
 
@@ -98,7 +98,7 @@ Here's a test to see if it is installed OK, uncomment the -display- method is yo
         irb(main):005:0> # f.display
         irb(main):006:0* exit
 
-####5) Postgresql
+####7) Postgresql
 
     $ sudo apt-get install postgresql
     $ gem install pg
@@ -163,7 +163,7 @@ And here's a Ruby test:
     	posts
     	=> #<PG::Result:0x0000000108c860>
         
-####6) GitHub and Heroku
+####8) GitHub and Heroku
 
 First, create an SSH key:
 
