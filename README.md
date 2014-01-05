@@ -45,7 +45,7 @@ The trick with rbenv is to run: rbenv rehash every time you change something, li
     $ rbenv install 2.0.0-p353
     
     $ rbenv rehash
-    $ rbenv install 2.0.0-p353
+    $ rbenv global 2.0.0-p353
 
 ####5) Time to install Rails
 The first step I take is to turn off ri and rdoc to speed things up.
