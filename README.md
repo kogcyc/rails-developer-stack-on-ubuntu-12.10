@@ -16,15 +16,15 @@ Portion One: Ruby, Git, Rails and databases
 
     $ sudo apt-get update
     $ sudo apt-get upgrade
-    $ sudo apt-get install build-essential curl git-core libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libxslt-dev nodejs zlib1g-dev
+    $ sudo apt-get install build-essential curl git-core libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libxslt-dev zlib1g-dev
 
-####2) Next we config Git
+####3) Next we config Git
 
     $ git config --global user.name "John Doe"
     $ git config --global user.email jdoe@gmail.com
     $ git config --list
 
-####3) Then we install rbenv
+####4) Then we install rbenv
 
 The trick with rbenv is to run: rbenv rehash every time you change something, like install a new version of Ruby or a new gem.
 
@@ -41,7 +41,7 @@ The trick with rbenv is to run: rbenv rehash every time you change something, li
     $ rbenv rehash
     $ rbenv global 1.9.3-p448
 
-####4) Time to install Rails
+####5) Time to install Rails
 The first step I take is to turn off ri and rdoc to speed things up.
 
     $ echo "install: --no-ri --no-rdoc" >> ~/.gemrc
@@ -50,7 +50,7 @@ The first step I take is to turn off ri and rdoc to speed things up.
     $ gem install rails -v 3.2.14
     $ rbenv rehash
 
-####5) sqlite3
+####6) sqlite3
 
 The server portion of sqlite3 is a set of libraries that binaries (and gems) can link to and use.
 
@@ -78,7 +78,7 @@ After that you can run the cli which is also named: sqlite3
 	sqlite> select sqlite_version();
 	3.7.13
 
-####6) RMagick
+####7) RMagick
 
 I use the RMagick gem to do image processing.
 
@@ -98,7 +98,7 @@ Here's a test to see if it is installed OK, uncomment the -display- method is yo
         irb(main):005:0> # f.display
         irb(main):006:0* exit
 
-####7) Postgresql
+####8) Postgresql
 
     $ sudo apt-get install postgresql
     $ gem install pg
@@ -163,7 +163,7 @@ And here's a Ruby test:
     	posts
     	=> #<PG::Result:0x0000000108c860>
         
-####8) GitHub and Heroku
+####9) GitHub and Heroku
 
 First, create an SSH key:
 
