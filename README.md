@@ -58,9 +58,11 @@ The first step I take is to turn off ri and rdoc to speed things up.
 
 ####6) sqlite3
 
-The server portion of sqlite3 is a set of libraries that binaries (and gems) can link to and use.
+The server components of sqlite3 are a set of libraries that binaries (and gems) can link to and use.
 
-Rails installs those sqlite3 libraries and the sqlite3 gem.
+Rails installs those sqlite3 libraries.
+
+The sqlite3 gem is installed when Bundler installs it as part of a normal new rails application.
 
     $ irb
         irb(main):001:0> require 'sqlite3'
