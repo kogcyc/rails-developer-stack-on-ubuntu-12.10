@@ -18,6 +18,12 @@ Portion One: Ruby, Git, Rails and databases
     $ sudo apt-get upgrade
     $ sudo apt-get install build-essential curl git-core libpq-dev libreadline-dev libsqlite3-dev libssl-dev libxml2-dev libxslt-dev zlib1g-dev
 
+####2) But we have to build node.js from source...
+
+    $ git clone https://github.com/joyent/node.git
+    $ cd node
+    $ ./configure && make && sudo make install
+
 ####3) Next we config Git
 
     $ git config --global user.name "John Doe"
