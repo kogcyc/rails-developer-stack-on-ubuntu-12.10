@@ -42,10 +42,10 @@ The trick with rbenv is to run: rbenv rehash every time you change something, li
     $ mkdir ~/.rbenv/plugins
     $ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     $ exec $SHELL
-    $ rbenv install 1.9.3-p448
+    $ rbenv install 2.0.0-p353
     
     $ rbenv rehash
-    $ rbenv global 1.9.3-p448
+    $ rbenv install 2.0.0-p353
 
 ####5) Time to install Rails
 The first step I take is to turn off ri and rdoc to speed things up.
